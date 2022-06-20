@@ -1,0 +1,143 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Calibri;
+	background-color: black;
+	color:white;
+}
+
+h1{
+	font-size: 32px;
+	text-align-last: center;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+}
+
+td{
+	padding-right: 20px;
+	padding-bottom: 5px;
+}
+
+
+table{
+	padding-bottom: 30px;
+}
+
+th{
+	text-align-last: left;
+}
+
+nav{
+	background: #232324;
+	height: 80px;
+	width:  100%;
+	font-size: 24px;
+}
+
+nav ul{
+	 text-align-last: center;	
+	 margin-left: 20px;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5 px;
+}
+
+nav ul li a{
+	color: white;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.frm{
+    border: solid white 2px;
+    width: 20%;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 50 px;
+}
+
+form{
+    margin: auto;
+    width: 100%;
+}
+
+#bt{
+    border: solid white 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 4px 2px;
+    background-color: #232324;
+    color: white;
+    text-decoration: none;
+    
+}
+
+p{
+	padding-top: 50px;
+	font-size: 20px;
+	text-align-last: center;
+}
+
+a.active, a:hover{
+	background: #3a3a40;
+	transition: .5s;
+}
+
+.facebook{
+	text-decoration: underline;
+	color: white;
+}
+
+.Kontakt{
+	margin-left: 0px;
+	padding-top: 40px;
+}
+
+.header{
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
+
+.galerie{
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.hometext{
+	font-size: 32px;
+}
+
+.homeimage{
+	padding-top: 16px;
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
