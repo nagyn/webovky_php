@@ -30,6 +30,6 @@ Jméno: <input type="text" size="10" name="user" /><br />
 Heslo: <input type ="password" size="10" name="pass" /><br />
 Potvrdit heslo: <input type="password" size="10" name="pass2" />
 <input type="submit" name="registrace" id="registrace" value="Registrovat">
-
+</form>
 </body>
 </html>

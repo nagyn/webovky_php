@@ -4,7 +4,7 @@ $ok=0;
 if(isset($_SESSION['uid'])){
 	if(isset($_SESSION['jmeno'])){
 		if(isset($_SESSION['cook'])){
-			if(isset($_COOKIE['webskola'])){
+			if(isset($_COOKIE['webmonstr'])){
 			 if($_SESSION['cook']==$_COOKIE['webmonstr']){
 $ok=1;	
 }

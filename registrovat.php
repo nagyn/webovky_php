@@ -19,12 +19,21 @@ if($ok==0){$_SESSION['zprava']="Formulář nebyl správně vyplněn. Pro opakov�
 		  }
 else{
 
-	$dotaz="SELECT uid FROM user WHERE username=$user";
+	$dotaz="SELECT * FROM `user` WHERE username=$user";
 
 	require_once('config.php');
 	$vys=mysqli_query($link,$dotaz);
-	if(mysqli_num_rows($vys)==0){
-		$dotaz="INSERT INTO monstr(username,pass) VALUES ('$user',MD5('$pass'));";
+    if(mysqli_connect_errno()){
+echo "Failed to connect to MySQL:" . mysqli_connect_error();
+exit();
+}
+    if(false===$vys){
+    printf("error: %s\n", mysqli_error($ling));
+    }
+    else{
+    echo 'done.';}
+	if(mysqli_num_rows($vys)===0){
+		$dotaz="INSERT INTO user(username,pass) VALUES ('$user',MD5('$pass'));";
 		if($vys==mysqli_query($link,$dotaz)){
 			$_SESSION['zprava']="Děkujeme za registraci.";}
 		else{

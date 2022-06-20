@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 /* Attempt to connect to MySQL database */
 $link = new mysqli("localhost","root","","monstr");
 // Check connection
