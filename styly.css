@@ -62,6 +62,11 @@ nav ul li a{
 	text-transform: uppercase;
 }
 
+.rezervace{
+    text-align-last: center;
+    vertical-align: middle;
+}
+
 .frm{
     border: solid white 2px;
     width: 20%;
@@ -135,6 +140,14 @@ a.active, a:hover{
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+
+.stoly{
+width:50%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+
 }
 
 .hometext{

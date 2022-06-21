@@ -26,9 +26,9 @@ include "session.php";
     ?>
 <form class="frm" action="registrovat.php" method="post">
 
-Jméno: <input type="text" size="10" name="user" /><br />
-Heslo: <input type ="password" size="10" name="pass" /><br />
-Potvrdit heslo: <input type="password" size="10" name="pass2" />
+<div>Jméno: <input type="text" size="10" name="user"></div>
+<div>Heslo: <input type ="password" size="10" name="pass"></div>
+<div>Potvrdit heslo: <input type="password" size="10" name="pass2" />
 <input type="submit" name="registrace" id="registrace" value="Registrovat">
 </form>
 </body>

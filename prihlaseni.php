@@ -8,8 +8,8 @@
 <body>
 <form class="frm" action="login.php" method="post">
 
-Jméno: <input type="text" size="10" name="user" /><br />
-Heslo: <input type ="password" size="10" name="pass" /><br />
+<div>Jméno:<input type="text" size="10" name="user"></div>
+<div>Heslo: <input type ="password" size="10" name="pass"></div>
 <input type="submit" name="login" value="Login">
 </form>
 <p>Pro registraci klikněte <a href="registrace.php">zde</a>. </p>
