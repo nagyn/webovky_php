@@ -1,20 +1,18 @@
 <?php
 $ok=0;
-if(isset($_POST['prihl'])){
+if(isset($_POST['login'])){
 	if(isset($_POST['user'])&& (strlen($_POST['user'])>0)){$user=$_POST['user'];}
 	
-	if(isset($_POST['pass'])&& (strlen($_POST['pass'])>6)){$heslo=$_POST['pass'];}
+	if(isset($_POST['pass'])&& (strlen($_POST['pass'])>6)){$pass=$_POST['pass'];}
 	
-	if(isset($user)&&isset($heslo)){$ok=1;}
+	if(isset($user)&&isset($pass)){$ok=1;}
 }
 
 session_start();
-if($ok==0){$_SESSION['zprava']="Formulář nebyl správně vyplněn. Pro opakování klikněnte <a href=\"homepage.php?sid=prihl\">ZDE</a>.";}
+if($ok==0){$_SESSION['zprava']="Formulář nebyl správně vyplněn.";}
 else{
 	
-	$dotaz="select uid from user where username='$user' AND pass=MD5('$pass')";
-	
-	/*echo $dotaz;*/
+    $dotaz="SELECT uid FROM user WHERE username='" . $user . "' AND pass=MD5('" . $pass . "')";
 	require_once('config.php');
 	
 	$vysledek=mysqli_query($link,$dotaz);
@@ -33,5 +31,5 @@ else{
 	
 	}
 
-header("Location:  http://". $_SERVER['HTTP_HOST']. dirname($_SERVER['PHP_SELF']). "/index.php");
+header("Location:  http://". $_SERVER['HTTP_HOST']. dirname($_SERVER['PHP_SELF']). "ucet.php");
 ?>

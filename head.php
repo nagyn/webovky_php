@@ -13,7 +13,7 @@
     <li><a class="<?= ($activePage == 'galerie') ? 'active':''; ?>"href="galerie.php">Galerie</a></li>
     <li><a class="<?= ($activePage == 'rezervace') ? 'active':''; ?>" href="rezervace.php">Rezervace</a></li>
     <li><a class="<?= ($activePage == 'kontakt') ? 'active':''; ?>" href="kontakt.php">Kontakt</a></li>
-    <li><a class="<?= ($activePage == 'ucet') ? 'active':''; ?>" href="registrace.php">Účet</a></li>
+    <li><a class="<?= ($activePage == 'ucet') ? 'active':''; ?>" href="ucet.php"><?php if(isset($_SESSION['jmeno'])){echo $_SESSION['jmeno'];}else{echo "Účet";} ?></a></li>
 </ul>
 </nav>
 </body>

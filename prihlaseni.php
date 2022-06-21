@@ -12,5 +12,6 @@ Jméno: <input type="text" size="10" name="user" /><br />
 Heslo: <input type ="password" size="10" name="pass" /><br />
 <input type="submit" name="login" value="Login">
 </form>
+<p>Pro registraci klikněte <a href="registrace.php">zde</a>. </p>
 </body>
 </html>
