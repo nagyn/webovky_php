@@ -19,7 +19,7 @@ if($ok==0){$_SESSION['zprava']="Formulář nebyl správně vyplněn. Pro opakov�
 		  }
 else{
 
-	$dotaz="SELECT * FROM user WHERE username='" . $user . "'";
+	$dotaz="SELECT * FROM user WHERE username='" . $user . "';";
 
 	require_once('config.php');
 	$vys=mysqli_query($link,$dotaz);
